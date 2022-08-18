@@ -53,9 +53,9 @@ module ApplicationHelper
   def button_exam exam
     button_text = exam.start? ? "Start" : "View"
     if button_text == "Start"
-      content_tag(:div, button_text, class: "btn btn-primary")
+      link_to "Start", exam_path(exam.id), class: "btn btn-primary"
     else
-      content_tag(:div, button_text, class: "btn btn-success")
+      link_to "View", "#", class: "btn btn-success"
     end
   end
 

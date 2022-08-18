@@ -1,4 +1,8 @@
 class ExamsController < ApplicationController
+  def show
+    @exam = Exam.find_by id: params[:id]
+  end
+
   def create
     @exam = Exam.new exam_params
     @exam.user_id = current_user.id

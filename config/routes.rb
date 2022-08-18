@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     root "static_pages#home"
     resources :subjects, only: %i(index)
     resources :users
-    resources :exams, only: %i(create)
+    resources :exams, only: %i(show create)
 
     get "/signup", to: "users#new"
     get "/login", to: "sessions#new"
