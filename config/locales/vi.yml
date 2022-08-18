@@ -34,12 +34,19 @@ vi:
       intro: "Hệ thống quản lý kỳ thi"
       signup: "Đăng ký ngay"
       create_exam: "Tạo bài thi"
+      create_date: "Ngày tạo"
+      subject: "Môn học"
+      status: "Trạng thái"
+      duration: "Thời gian  (phút)"
+      ques_num: "Số  câu hỏi"
+      score: "Điểm số "
+      no_exam: "Chưa có bài thi"
   subjects:
     index:
       title: "Tất cả môn học"
       name: "Tên môn học"
       ques_num: "Số câu hỏi"
-      duration: "Thời gian(phút)"
+      duration: "Thời gian (phút)"
       score_pass: "Điểm đạt"
       description: "Mô tả"
       no_subject: "Chưa có môn học"
@@ -63,6 +70,10 @@ vi:
     update:
       update_success: "Thông tin đã được thay đổi"
       update_false: "Cập nhật thông tin thất bại"
+  exams:
+    create:
+      success_create: "Tạo bài kiểm tra thành công"
+      fail_create: "Tạo bài kiểm tra thất bại"
   admin:
     static_pages:
       index:

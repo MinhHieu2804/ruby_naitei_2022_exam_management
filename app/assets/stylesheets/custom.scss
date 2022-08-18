@@ -181,13 +181,61 @@ input {
   margin-bottom: 10px;
 }
 
-.remove-ans{
+.remove-ans {
   margin: 15px;
 }
 
-.save-question{
+.save-question {
   width: 20%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+}
+
+/* margin */
+.mg-top-24 {
+  margin-top: 24px;
+}
+
+/* table */
+td {
+  vertical-align: middle !important;
+}
+
+.status {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  white-space: nowrap;
+  touch-action: manipulation;
+
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  font-weight: bold;
+  color: white
+}
+
+.start-status {
+  background-color: $primary;
+}
+
+.completed-status {
+  background-color: #46b8da;
+}
+
+.passed-status {
+  background-color: $success;
+}
+
+.failed-status {
+  background-color: red;
 }

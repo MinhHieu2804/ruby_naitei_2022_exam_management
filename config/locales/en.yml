@@ -34,12 +34,19 @@ en:
       intro: "The exam management"
       signup: "Sign up now!"
       create_exam: "Create Exam"
+      create_date: "Create Date"
+      subject: "Subject"
+      status: "Status"
+      duration: "Duration(min)"
+      ques_num: "Question number"
+      score: "Score"
+      no_exam: "No exam yet"
   subjects:
     index:
       title: "All subjects"
       name: "Subject name"
       ques_num: "Question number"
-      duration: "Duration(min)"
+      duration: "Duration (min)"
       score_pass: "Score to pass"
       description: "Description"
       no_subject: "No subject yet"
@@ -63,6 +70,10 @@ en:
     update:
       update_success: "Profile updated"
       update_false: "Update failed"
+  exams:
+    create:
+      success_create: "Successfully created a new exam"
+      fail_create: "New creation failed"
   admin:
     static_pages:
       index:
@@ -128,7 +139,7 @@ en:
         create: "Create"
       create:
         success_create: "Successfully created a new subject"
-        fail_create: "New creation failed."
+        fail_create: "New creation failed"
       edit:
         title: "Edit subjects"
         save_changes: "Save changes"

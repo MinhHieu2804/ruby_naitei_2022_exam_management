@@ -30,6 +30,35 @@ module ApplicationHelper
     end
   end
 
+  def status_exam exam
+    if exam.start?
+      return content_tag(:span, exam.status,
+                         class: "status start-status")
+    end
+    if exam.completed?
+      return content_tag(:span, exam.status,
+                         class: "status completed-status")
+    end
+    if exam.failed?
+      return content_tag(:span, exam.status,
+                         class: "status failed-status")
+    end
+
+    return unless exam.passed?
+
+    content_tag(:span, exam.status,
+                class: "status passed-status")
+  end
+
+  def button_exam exam
+    button_text = exam.start? ? "Start" : "View"
+    if button_text == "Start"
+      content_tag(:div, button_text, class: "btn btn-primary")
+    else
+      content_tag(:div, button_text, class: "btn btn-success")
+    end
+  end
+
   def status_account user
     user.activated ? "active" : "inactive"
   end
