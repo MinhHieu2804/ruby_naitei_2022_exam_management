@@ -51,7 +51,7 @@ module ApplicationHelper
   end
 
   def button_exam exam
-    button_text = exam.start? ? "Start" : "View"
+    button_text = exam.status == "start" ? "Start" : "View"
     if button_text == "Start"
       link_to "Start", exam_path(exam.id), class: "btn btn-primary"
     else

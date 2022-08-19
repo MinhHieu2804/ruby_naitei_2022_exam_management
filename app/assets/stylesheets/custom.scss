@@ -239,3 +239,41 @@ td {
 .failed-status {
   background-color: red;
 }
+
+.question-title{
+  font-size: 20px;
+}
+
+.answer-collect{
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+// answer in exam
+.answer-collect > label{
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  input{
+    margin-top: 0 !important;
+    width: 20px ;
+    margin-right: 10px;
+    font-weight: normal !important;
+  }
+}
+
+.timer {
+  position: fixed;
+  right: 50px;
+  top: 70px;
+  font-size: 20px;
+  border: 1px solid;
+  background-color: rgba(255,255,204,0.5);
+  width: 150px;
+}
+
+.countdown {
+  font-size: 25px;
+  font-weight: 500;
+}

@@ -177,4 +177,4 @@ vi:
   question:
     type:
       single_choice: "Trắc nghệm"
-      text_question: "Tự luận"
+      multiple_choice: "Chọn nhiều đáp án"

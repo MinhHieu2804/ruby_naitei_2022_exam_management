@@ -177,4 +177,4 @@ en:
   question:
     type:
       single_choice: "Single choice"
-      text_question: "Text question"
+      multiple_choice: "Multiple choice"

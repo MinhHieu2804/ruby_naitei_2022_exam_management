@@ -3,7 +3,7 @@ class Question < ApplicationRecord
   QUESTION_ATTRS = %i(question_content subject_id question_type)
                    .push(answers_attributes: NESTED_ATTRS)
 
-  enum type: {single_choice: 0, text_question: 1}
+  enum type: {single_choice: 0, multiple_choice: 1}
 
   belongs_to :subject
 
